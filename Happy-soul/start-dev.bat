@@ -1,0 +1,3 @@
+@echo off
+echo Starting Happy-soul development server...
+npm run dev

@@ -1,0 +1,12 @@
+# Netlify configuration file
+[build]
+  base = "Happy-soul/"
+  publish = "dist"
+  command = "npm run build"
+  branch = "main" 
+
+# Handle SPA routing - redirect all paths to index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
