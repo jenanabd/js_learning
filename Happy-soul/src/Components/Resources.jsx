@@ -32,12 +32,18 @@ const ResourcesNavbar = () => {
         >
           Resources
         </a>
-        <a 
-          href="#book" 
+        <Link 
+    to="/professional-resources" 
+    className="text-[#0F2A3F] hover:text-[#6bb7a2] transition-colors font-nav"
+  >
+    Professional Resources
+  </Link>
+  <Link 
+          to="/book-session" 
           className="text-[#0F2A3F] hover:text-[#6bb7a2] transition-colors font-nav"
         >
           Book a Session
-        </a>
+        </Link>
         <a 
           href="#about" 
           className="text-[#0F2A3F] hover:text-[#6bb7a2] transition-colors font-nav"
@@ -49,13 +55,13 @@ const ResourcesNavbar = () => {
       {/* Auth Buttons */}
       <div className="flex items-center space-x-4">
         <a 
-          href="#login" 
+          href="/auth" 
           className="text-[#0F2A3F] border border-[#6bb7a2] px-4 py-2 rounded-md font-nav hover:bg-blue-50 transition-colors"
         >
           Login
         </a>
         <a 
-          href="#signup" 
+          href="/auth" 
           className="bg-[#6bb7a2] text-white px-4 py-2 rounded-md font-nav hover:bg-[#6bb7a2] transition-colors"
         >
           Sign Up
